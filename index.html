@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Epic Employee Data Tracker</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+	<div class="jumbotron">
+  <h1>Epic Employee Tracker</h1>
+  <p>For those who <em>need</em> to get things done.</p>
+</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Current Employee</h3>
+			</div>
+			<div class="panel-body">
+			<div id="currEmps">
+				        <table class="table">
+          <tr>
+            <th>Employee Name</th>
+            <th>Role</th>
+            <th>Monthy Rate</th>
+            <th>Months Employed</th>
+            <th>Total Billed</th>
+          </tr>
+        </table>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Add Employee</h3>
+		</div>
+		<div class="panel-body">
+			<form>
+				<div class="form-group">
+					<label for="name">Employee Name</label>
+					<input type="text" class="form-control" id="name">
+				</div>
+				<div class="form-group">
+					<label for="role">Role</label>
+					<input type="text" class="form-control" id="role">
+				</div>
+				<div class="form-group">
+					<label for="start-date">Start Date (DD/MM/YY)</label>
+					<input type="text" class="form-control" id="start-date">
+				</div>
+				<div class="form-group">
+					<label for="monthly-rate">Monthly Rate</label>
+					<input type="number" class="form-control" id="monthly-rate">
+				</div>
+				<button class="btn btn-primary" id="ent">Submit</button>
+			</form>
+		</div>
+
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
